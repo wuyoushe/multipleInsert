@@ -32,9 +32,9 @@ class TestController extends Controller
         //'live_id', 'pv_count', 'uv_count' 字段名
         $dbl->setColumns(['live_id', 'pv_count', 'uv_count']);
         $dbl->setValues($arr);
-        $da = $dbl->execute();
+        $data = $dbl->execute();
 
-        $results = array('code' => 0,'msg' => '更新成功', 'data' => $da);
+        $results = array('code' => 0,'msg' => '更新成功', 'data' => $data);
         return $this->json($results);
 
     }
