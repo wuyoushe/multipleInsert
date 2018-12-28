@@ -126,7 +126,6 @@ class MultipleInsert
      * 创建sql
      *
      * @return string
-     * @throws \Doctrine\DBAL\DBALException
      */
     protected function getSQL()
     {
